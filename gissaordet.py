@@ -1,8 +1,11 @@
+import time
+time.sleep(0.2)
 guessed = ""
 wrongs = 6
-win = False
+exit = False
 check = 1
 correct = str(input("Enter a word to be guessed: "))
+time.sleep(1)
 correct.strip()
 correct = correct.lower()
 g1 = " "
@@ -21,7 +24,7 @@ for j in range(len(correct)):
     b.append(correct[j])
     c.append("_")
 
-while win != True:
+while exit != True:
     guess = input("Enter guess: ")
     guess = guess[0].lower()
     if guessed.find(guess[0]) != -1: 
@@ -62,9 +65,9 @@ while win != True:
     d = "".join(c)
     
     if d == correct:
-        win = True
+        exit = True
     if wrongs <= 0:
-        win = True
+        exit = True
 if wrongs <= 0:
     print("You lost.")
 else:
