@@ -1,5 +1,6 @@
 num1 = 4025
-num2 = 5
+num2 = 4
+
 
 
 check1 = num1 % 2
