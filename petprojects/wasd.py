@@ -6,7 +6,6 @@ def cool_circle (str):
     facing = float(0)
     waypoint = 0
     turtle.position(waypoint)
-    turtle.
     print(str)
     ang = int(45)
     leng = float(0.5)
